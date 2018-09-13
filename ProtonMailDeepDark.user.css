@@ -2,7 +2,7 @@
 @name ProtonMail DeepDark
 @namespace github.com/RaitaroH/ProtonMail-DeepDark
 @homepageURL https://github.com/RaitaroH/ProtonMail-DeepDark
-@version 1.0.0
+@version 1.0.1
 @updateURL https://rawgit.com/RaitaroH/ProtonMail-DeepDark/master/ProtonMail-DeepDark.user.css
 @description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (PrtonMail dark theme)
 @author RaitaroH
@@ -545,7 +545,7 @@
 		filter: brightness(110%);
 		color: var(--main-text) !important;
 	}
-	.settingsMenu-container .sidebarApp-menu .sidebarApp-item::after
+	.settingsMenu-container .sidebarApp-menu .sidebarApp-item::after, .sidebarApp-item .navigationItem-aside
 	{
 		background: transparent !important;
 	}
@@ -571,6 +571,75 @@
 		color: var(--main-color) !important;
 	}
 	.sidebarApp-container .footer .storageBar
+	{
+		background: var(--hover-background) !important;
+	}
+
+	/*Contacts*/
+	.contactList-container
+	{
+		background-color: var(--main-background) !important;
+	}
+	.sidebarApp-item .navigationItem-item, .sidebarApp-item .sidebarApp-link, .sidebarApp-menu .menuLabel-link
+	{
+		color: var(--main-text) !important;
+	}
+	.sidebarContact-container .sidebarApp-menu .sidebarApp-item::after
+	{
+		background: transparent !important;
+	}
+	.contactsToolbar-container, .pm_table table tr:not(:last-child) td
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.contactList-item-activeCursorContact .customCheckbox-container
+	{
+		border-left-color: var(--main-color) !important;
+	}
+	.contactList-tbody
+	{
+		background: var(--hover-background) !important;
+	}
+	/*add contacts*/
+	.contactDetails-fields-locked-notice
+	{
+		background: var(--main-background) !important;
+	}
+	.contactItem-label > input
+	{
+		color: var(--main-text) !important;
+	}
+	.contactItem-inputs input:not([type="checkbox"]), .contactItem-inputs textarea
+	{
+		background: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.contactItem-inputs input:not([type="checkbox"]):focus, .contactItem-inputs textarea:focus,
+	.contactItem-inputs input:not([type="checkbox"]):active, .contactItem-inputs textarea:active
+	{
+		border-color: var(--main-color) !important;
+	}
+	.contactItem-actions > button:not(.pm_button), .contactItem-toggle-sort
+	{
+		color: var(--main-color) !important;
+	}
+	/*lock icon*/
+	.contactDetails-fields-ico > svg
+	{
+		color: var(--main-color) !important;
+		fill: var(--main-color) !important;
+	}
+	.contactDetails-fields-ico
+	{
+		background-color: var(--hover-background) !important;
+	}
+	/*dropdown*/
+	.contactItem-selectType
+	{
+		background: var(--main-background) !important;
+	}
+	.contactItem-selectType li a:hover
 	{
 		background: var(--hover-background) !important;
 	}
@@ -618,7 +687,8 @@
 	#conversation-view .message .details .recipients-summary strong,
 	.messageContacts-email,
 	.encrypted-subject .header-name, .encrypted-subject i, .messageContacts-where,
-	span.gmail_quote > font
+	span.gmail_quote > font,
+	#conversation-view .message .frame
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -760,7 +830,8 @@
 		color: var(--main-color) !important;
 		background: var(--second-background) !important;
 	}
-	.conversation.active .time, .conversation.active .row .senders, .conversation .row .meta .fa-star
+	.conversation.active .time, .conversation.active .row .senders, .conversation .row .meta .fa-star,
+	#conversation-view .message .details .recipients-summary
 	{
 		color: var(--main-color) !important;
 	}
@@ -955,5 +1026,54 @@
 	.vpn-container .vpn-ressourcesSection-clients-item-container:hover
 	{
 		box-shadow: none !important;
+	}
+
+	/*Dashboard*/
+	.settingsDashboard-overview-section-table-container, #pm_settings .well, .settingsDashboard-plans [class*="Column-container"] > :not(:last-child),
+	.settingsDashboard-plans [class*="Column-container"], .settingsDashboard-plans .totalRows-container > label:not(:first-of-type)::before
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.settingsDashboard-overview-section-table-container .overviewSection-container .overviewSection-tbody-billing > tr > th,
+	.settingsDashboard-overview-section-table-container .overviewSection-container .overviewSection-tbody > tr > th
+	{
+		color: var(--main-text) !important;
+	}
+	.overviewSection-tbody > tr td strong, .settingsDashboard-plans [class*="Column-container"] > :not(:last-child)
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.overviewSection-container .topUp-button, .giftCodeBtn-container, .settingsDashboard-plans .freeColumn-free,
+	.settingsDashboard-plans .planPrice, .totalRows-2-years-price, .totalRows-monthly-price, .totalRows-yearly-price
+	{
+		color: var(--main-color) !important;
+	}
+	.settingsDashboard-overview-section-table-container .overviewSection-container .overviewSection-tbody-billing
+	{
+		background: var(--hover-background) !important;
+	}
+	.settingsDashboard-plans {
+		background: var(--second-background) !important;
+	}
+	.settingsDashboard-plans::after, .settingsDashboard-plans::before
+	{
+		background: transparent !important;
+	}
+	.settingsDashboard-plans [class*="Column-container"] .isCurrent
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		box-shadow: 0 0 8px var(--main-color),0 0 0 2px var(--main-color) !important;
+	}
+	.settingsDashboard-plans.free-active .freeColumn-container, .settingsDashboard-plans.plus-active .plusColumn-container,
+	.settingsDashboard-plans.professional-active .professionalColumn-container, .settingsDashboard-plans.visionary-active .visionaryColumn-container
+	{
+		border-color: var(--main-color) !important;
+		box-shadow: 0 0 8px var(--main-color),0 0 0 2px var(--main-color) !important;
+	}
+	[class*="settingsDashboard-arrowToScroll"] .arrowsToScroll-button
+	{
+		background-color: var(--hover-background) !important;
+		box-shadow: var(--shadow) !important;
 	}
 }
