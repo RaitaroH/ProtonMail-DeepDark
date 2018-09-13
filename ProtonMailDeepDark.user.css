@@ -2,7 +2,7 @@
 @name ProtonMail DeepDark
 @namespace github.com/RaitaroH/ProtonMail-DeepDark
 @homepageURL https://github.com/RaitaroH/ProtonMail-DeepDark
-@version 1.0.1
+@version 1.0.2
 @updateURL https://rawgit.com/RaitaroH/ProtonMail-DeepDark/master/ProtonMail-DeepDark.user.css
 @description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (PrtonMail dark theme)
 @author RaitaroH
@@ -1075,5 +1075,61 @@
 	{
 		background-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
+	}
+
+	/*Compose email*/
+	#pm_composer .composer
+	{
+		box-shadow: var(--shadow) !important;
+	}
+	.composerHeader-container
+	{
+		background: var(--hover-background) !important;
+	}
+	#pm_composer .composer .row
+	{
+		border-color: var(--hover-background) !important;
+	}
+	#pm_composer .composer .row, .squireEditor-loaded .row,
+	#pm_composer input, #pm_composer select, #pm_composer textarea
+	{
+		color: var(--main-text) !important;
+		background: var(--main-background) !important;
+	}
+	.composerInputMeta-overlay, .autocompleteEmails-autocomplete,
+	.autocomplete-container .awesomplete li[aria-selected="true"],
+	.autocomplete-container .awesomplete li[aria-selected="true"]:hover,
+	.autocompleteEmails-autocomplete li[aria-selected="true"],
+	.autocompleteEmails-autocomplete li[aria-selected="true"]:hover,
+	#pm_composer .composer footer, .squireEditor-loaded footer
+	{
+		border-color: var(--hover-background) !important;
+		background: var(--hover-background) !important;
+	}
+	.autocompleteEmailsItem-icon .encryptionIcon, .autocompleteEmails-btn-remove:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.composerInputMeta-overlay, .composerTime-container, .autocompleteEmails-label, .autocompleteEmails-btn-remove
+	{
+		color: var(--main-text) !important;
+	}
+	.composerInputMeta-overlay-list .svg-ellipsis-clipper, .autocompleteEmails-item
+	{
+		background: transparent !important;
+	}
+	.autocompleteEmails-item
+	{
+		border-color: var(--hover-background) !important;
+		background: var(--hover-background) !important;
+	}
+	/*expiration time*/
+	#pm_composer .composer footer .pm_button svg, .squireEditor-loaded footer .pm_button svg
+	{
+		fill: var(--main-text) !important;
+	}
+	#pm_composer .composer footer .pm_button:hover svg, .squireEditor-loaded footer .pm_button:hover svg
+	{
+		fill: var(--main-color) !important; 
 	}
 }
