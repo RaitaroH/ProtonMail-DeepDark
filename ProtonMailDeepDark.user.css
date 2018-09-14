@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name ProtonMail DeepDark
-@namespace github.com/RaitaroH/ProtonMail-DeepDark
-@homepageURL https://github.com/RaitaroH/ProtonMail-DeepDark
-@version 1.0.2
-@updateURL https://rawgit.com/RaitaroH/ProtonMail-DeepDark/master/ProtonMail-DeepDark.user.css
+@namespace gitlab.com/RaitaroH/ProtonMail-DeepDark
+@homepageURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark
+@version 1.0.3
+@updateURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark/raw/master/ProtonMail-DeepDark.user.css
 @description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (PrtonMail dark theme)
 @author RaitaroH
 @license GNU-V3.0
@@ -139,7 +139,7 @@
 
 @-moz-document domain('mail.protonmail.com') {
 
-/*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
+/*Theme made by RaitaroH @https://gitlab.com/RaitaroH/YouTube-DeepDark*/
 
 /*GNU General Public License v3.0.*/
 
@@ -435,6 +435,7 @@
 	.headerSecured-container, .headerNoAuth-container
 	{
 		background: var(--second-background) !important;
+		box-shadow: var(--shadow);
 	}
 	.navigation > li.active, .navigation > li:hover
 	{
@@ -448,7 +449,12 @@
 	/*advanced search*/
 	div.tooltip-inner
 	{
-		background: var(--hover-background) !important;
+		background: var(--main-background) !important;
+		box-shadow: var(--shadow) !important;
+	}
+	.tooltip.top .tooltip-arrow
+	{
+		border-top-color: var(--main-background) !important;
 	}
 	[class*="searchForm-action-button-"]:hover
 	{
@@ -530,6 +536,10 @@
 	}
 
 	/*Sidebar*/
+	.sidebarApp-container
+	{
+		margin-top: 15px; /*extra spacing due to navbar box-shadow*/
+	}
 	#ptSidebar, .headerSecuredDesktop-logo
 	{
 		background: var(--second-background) !important;
