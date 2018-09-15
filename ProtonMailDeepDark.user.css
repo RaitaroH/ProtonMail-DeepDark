@@ -2,7 +2,7 @@
 @name ProtonMail DeepDark
 @namespace gitlab.com/RaitaroH/ProtonMail-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark
-@version 1.0.3
+@version 1.0.4
 @updateURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark/raw/master/ProtonMail-DeepDark.user.css
 @description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (PrtonMail dark theme)
 @author RaitaroH
@@ -714,7 +714,10 @@
 	/*time*/
 	#conversation-view .message .summary .labels, #conversation-view .message .summary .location.folders,
 	#conversation-view .message .summary .message-attachments, #conversation-view .message .summary .status,
-	#conversation-view .message .summary .time, #conversation-view .message .summary .summary-right
+	#conversation-view .message .summary .time, #conversation-view .message .summary .summary-right,
+  #conversation-view .message.unread:not(.open) .summary .labels, #conversation-view .message.unread:not(.open) .summary .location.folders,
+  #conversation-view .message.unread:not(.open) .summary .status, #conversation-view .message.unread:not(.open) .summary .summary-right,
+  #conversation-view .message.unread:not(.open) .summary .time
 	{
 		background: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
