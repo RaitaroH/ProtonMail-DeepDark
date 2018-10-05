@@ -10,6 +10,16 @@ Theme as a userstyle [here](https://openusercss.org/theme/5b700d5f7d89ab0c002403
 
 ### **You can also install all my themes at once from [here](https://gitlab.com/RaitaroH/Import-All-Deepdark).**
 
+# Install and setup
+
+### Using a browser extension:
+* Stylus - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
+
+### Install this theme:  
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-3daee9.svg?longCache=true&style=for-the-badge)](https://gitlab.com/RaitaroH/ProtonMail-DeepDark/raw/master/ProtonMailDeepDark.user.css)
+  >Installs directly from this repository.  
+  >This is only available using Stylus (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
+
 # Screenshots
 
 ![alt tag](./Images/Login.png)
