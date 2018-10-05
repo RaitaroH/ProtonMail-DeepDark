@@ -18,3 +18,5 @@ Theme as a userstyle [here](https://openusercss.org/theme/5b700d5f7d89ab0c002403
 
 # Colors 
 The colors are available in the code; different colors can be used. Here are just a few colors. For every color example please look [here](https://github.com/OpenUserCSS/OpenUserCSS-DeepDark#colors).
+
+For a more color themes I also have a separate script [here](https://gitlab.com/RaitaroH/Import-All-Deepdark/raw/master/switcher.user.css).
