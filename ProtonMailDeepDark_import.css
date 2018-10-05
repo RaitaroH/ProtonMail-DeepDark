@@ -9,12 +9,6 @@
 @license GNU-V3.0
 ==/UserStyle== */
 
-@-moz-document domain('mail.protonmail.com') {
-
-/*Theme made by RaitaroH @https://gitlab.com/RaitaroH/YouTube-DeepDark*/
-
-/*GNU General Public License v3.0.*/
-
 	/*Main color variables*/
 	:root
 	{
@@ -847,4 +841,3 @@
 	{
 		fill: var(--main-color) !important; 
 	}
-}
