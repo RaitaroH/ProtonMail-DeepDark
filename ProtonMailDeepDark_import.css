@@ -1,16 +1,4 @@
-/* ==UserStyle==
-@name ProtonMail DeepDark
-@namespace gitlab.com/RaitaroH/ProtonMail-DeepDark
-@homepageURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark
-@version 1.0.4
-@updateURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark/raw/master/ProtonMail-DeepDark.user.css
-@description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (PrtonMail dark theme)
-@author RaitaroH
-@license GNU-V3.0
-==/UserStyle== */
-
 @charset "UTF-8";
-
 	/*Main color variables*/
 	:root
 	{
