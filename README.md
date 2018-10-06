@@ -21,10 +21,11 @@ Theme as a userstyle [here](https://openusercss.org/theme/5b700d5f7d89ab0c002403
   >This is only available using Stylus (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
 
 ### Using the ProtonMail settings
-  >This cannot be imported so you will have to copy the code from [here](https://gitlab.com/RaitaroH/ProtonMail-DeepDark/raw/master/ProtonMailDeepDark.user.css).  
-  >If is too long, delete everything until you get to `@moz`. If even that is too much, delete everything in between `/**/` inside `:root`.  
-  >Also **DO NOT** forget to replace the variables in `:root` (`/*[[mainColor]]*/` this stuff) with a set I provide just bellow `--shadow` for the theme to actually work.  
+  >~~This cannot be imported so you will have to copy the code from [here](https://gitlab.com/RaitaroH/ProtonMail-DeepDark/raw/master/ProtonMailDeepDark.user.css).~~  
+  >~~If is too long, delete everything until you get to `@moz`. If even that is too much, delete everything in between `/**/` inside `:root`.~~  
+  >~~Also **DO NOT** forget to replace the variables in `:root` (`/*[[mainColor]]*/` this stuff) with a set I provide just bellow `--shadow` for the theme to actually work.~~  
 
+##### **BETTER JUST COPY PASTE FROM** [HERE](https://gitlab.com/RaitaroH/ProtonMail-DeepDark/raw/master/Import.css).
 ![alt tag](./Images/install.gif)
 
 # Screenshots
