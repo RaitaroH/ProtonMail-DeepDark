@@ -25,6 +25,8 @@ Theme as a userstyle [here](https://openusercss.org/theme/5b700d5f7d89ab0c002403
   >If is too long, delete everything until you get to `@moz`. If even that is too much, delete everything in between `/**/` inside `:root`.  
   >Also **DO NOT** forget to replace the variables in `:root` (`/*[[mainColor]]*/` this stuff) with a set I provide just bellow `--shadow` for the theme to actually work.  
 
+![alt tag](./Images/install.gif)
+
 # Screenshots
 
 ![alt tag](./Images/Login.png)
