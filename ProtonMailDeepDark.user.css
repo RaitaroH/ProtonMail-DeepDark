@@ -2,7 +2,7 @@
 @name ProtonMail DeepDark
 @namespace gitlab.com/RaitaroH/ProtonMail-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark
-@version 1.0.4
+@version 1.0.5
 @updateURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark/raw/master/ProtonMail-DeepDark.user.css
 @description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (PrtonMail dark theme)
 @author RaitaroH
@@ -752,12 +752,24 @@
 	}
 	/*making some emails readable*/
 	.bodyDecrypted > tbody td, .bodyDecrypted > tbody tr td, .bodyDecrypted > tbody tr td div, .bodyDecrypted > table, .bodyDecrypted > tbody,
-	.wrapper > tbody > tr > td
+	.wrapper > tbody > tr > td, .line_content.new.noteable_line
 	{
-    	background-color: transparent !important;
+        background: transparent !important;
 		border-color: var(--hover-background) !important;
 		color: var(--dimmer-text) !important;
 	}
+    .diff-line-num.new_line
+    {
+        background-color: var(--hover-background) !important;
+        border-color: var(--hover-background) !important;
+        color: var(--dimmer-text) !important;
+    }
+    .diff-line-num.old_line
+    {
+        background-color: var(--second-background) !important;
+        border-color: var(--hover-background) !important;
+        color: var(--dimmer-text) !important;
+    }
 
 	/*Inbox*/
 	#conversation-view .frame, #pm_main
@@ -772,6 +784,11 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+    /*column view senders and date*/
+    body #conversation-list-rows .conversation .senders, body #conversation-list-rows .conversation .size
+    {
+        color: var(--main-text) !important;
+    }
 	/*no messages selected*/
 	.countElementsSelected-icon, h1, h2, h3, h4, h5, h6
 	{
