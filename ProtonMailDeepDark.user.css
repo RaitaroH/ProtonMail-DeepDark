@@ -2,7 +2,7 @@
 @name ProtonMail DeepDark
 @namespace gitlab.com/RaitaroH/ProtonMail-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark
-@version 1.0.5
+@version 1.0.6
 @updateURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark/raw/master/ProtonMail-DeepDark.user.css
 @description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (PrtonMail dark theme)
 @author RaitaroH
@@ -698,7 +698,8 @@
 	.messageContacts-email,
 	.encrypted-subject .header-name, .encrypted-subject i, .messageContacts-where,
 	span.gmail_quote > font,
-	#conversation-view .message .frame
+	#conversation-view .message .frame,
+	.recipients-details-size
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -1161,5 +1162,23 @@
 	#pm_composer .composer footer .pm_button:hover svg, .squireEditor-loaded footer .pm_button:hover svg
 	{
 		fill: var(--main-color) !important; 
+	}
+	/*attachments*/
+	.composer-askEmbedding, .composerAttachments-container, .composerAttachments-header, .composerAttachments-loaders
+	{
+		border-color: var(--hover-background) !important;
+		background: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.composerAskEmbdded-details {
+		border-color: var(--hover-background) !important;
+		background: var(--hover-background) !important;
+	}
+	/*encryption*/
+	.composerOptions-container
+	{
+		border-color: var(--hover-background) !important;
+		background: var(--second-background) !important;
+		color: var(--main-text) !important;
 	}
 }
