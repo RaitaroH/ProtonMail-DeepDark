@@ -2,7 +2,7 @@
 @name ProtonMail DeepDark
 @namespace gitlab.com/RaitaroH/ProtonMail-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark
-@version 1.0.6
+@version 1.0.7
 @updateURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark/raw/master/ProtonMailDeepDark.user.css
 @description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (PrtonMail dark theme)
 @author RaitaroH
@@ -416,7 +416,7 @@
 	}
 
 	/*Login*/
-	.pm_panel.alt, .pm-loader-fullpage
+	.pm_panel.alt, .pm-loader-fullpage, .pm_panel-login__inner
 	{
 		background: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
@@ -771,6 +771,12 @@
         border-color: var(--hover-background) !important;
         color: var(--dimmer-text) !important;
     }
+	/*reply chain*/
+	blockquote span[class="size"], blockquote span[style*="color"],
+	#conversation-view .message .frame div
+	{
+		color: var(--dimmer-text) !important;
+	}
 
 	/*Inbox*/
 	#conversation-view .frame, #pm_main
@@ -797,7 +803,8 @@
 	}
 	/*option buttons*/
 	.pm_buttons a, .pm_buttons .pm_buttons-child, .countElementsSelected-btn-unselect,
-	.pm_button:focus, .pm_button:hover, .pm_button
+	.pm_button:focus, .pm_button:hover, .pm_button,
+	.pm_buttons a, .pm_buttons button
 	{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
@@ -806,7 +813,7 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	.pm_buttons a, .pm_buttons .pm_buttons-child, .countElementsSelected-btn-unselect, .sidebarApp-item .navigationItem-btn-refresh, .pm_button
+	.pm_buttons a, .pm_buttons .pm_buttons-child, .countElementsSelected-btn-unselect, .sidebarApp-item .navigationItem-btn-refresh, .pm_button, .pm_buttons a, .pm_buttons button
 	{
 		color: var(--main-text) !important;
 	}
@@ -847,6 +854,10 @@
 	.conversation.read, .conversation.active, .conversation.marked, .conversation
 	{
 		border-color: var(--hover-background) !important;
+	}
+	.conversation.read:hover, .conversation.active:hover, .conversation.marked:hover, .conversation:hover
+	{
+		background-color: var(--second-background) !important;
 	}
 	.conversation .row .senders, .conversation .time, .conversation .row .meta .fa-star-o
 	{
