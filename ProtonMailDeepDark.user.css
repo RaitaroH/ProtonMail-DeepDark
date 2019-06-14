@@ -2,7 +2,7 @@
 @name ProtonMail DeepDark
 @namespace gitlab.com/RaitaroH/ProtonMail-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark
-@version 1.0.7
+@version 1.0.8
 @updateURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark/raw/master/ProtonMailDeepDark.user.css
 @description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (PrtonMail dark theme)
 @author RaitaroH
@@ -384,9 +384,18 @@
 		color: var(--main-text) !important;
 	}
 
-	p, li:not(.labelModal-item)
+	p, li:not(.labelModal-item):not(.labelColorSelector-item)
 	{
 		color: var(--dimmer-text) !important;
+	}
+	/*fix for folder colors*/
+	.labelColorSelector-item-mask 
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.labelColorSelector-item .fa
+	{
+		color: var(--main-background) !important;
 	}
 
 	fa
@@ -883,6 +892,12 @@
 	{
 		background: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
+	}
+	/*folder dropdowns*/
+	.scrollbox-container-group .dropdown-folder-scrollbox-group-item-button, .scrollbox-container-group .dropdown-folder-scrollbox-group-item-button:hover, 
+	.dropdown-folder-create .dropdown-folder-create-button, .dropdown-folder-create .dropdown-folder-create-button:hover
+	{
+		background: transparent !important;
 	}
 	.pm_dropdown > a, .pm_dropdown > button, .pm_dropdown > ul > li
 	{
