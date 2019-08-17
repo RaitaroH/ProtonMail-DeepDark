@@ -33,4 +33,4 @@ Also, credit where credit is due for the color palettes down bellow. ([@KDE](htt
 
 Other colors examples from my [Stylus-DeepDark](https://gitlab.com/RaitaroH/Stylus-DeepDark).
 
-![alt tag](https://gitlab.com/RaitaroH/Stylus-DeepDark/raw/master/Images/manager.gif)
+![alt tag](https://github.com/RaitaroH/Stylus-DeepDark/blob/master/Images/manager.gif)
