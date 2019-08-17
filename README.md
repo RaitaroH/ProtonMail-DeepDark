@@ -2,7 +2,7 @@
 ![alt tag](./Images/ProtonMail%20-%20DeepDark.png)
 Emails should be written and read in the dark. May the dark be kinder on thine eyes. (ProtonMail dark theme)
 
-This is a dark theme for ProtonMail inspired by [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/?src=search).
+This is a dark theme for ProtonMail inspired by FT DeepDark.
 
 Also, credit where credit is due for the color palettes down bellow. ([@KDE](https://github.com/KDE), [@horst3180](https://github.com/horst3180), [@linuxmint](https://github.com/linuxmint), [Firefox](https://www.mozilla.org/en-US/firefox/new/), [YouTube](https://www.youtube.com/) and [Discord](https://discordapp.com/))
 
@@ -29,10 +29,8 @@ Also, credit where credit is due for the color palettes down bellow. ([@KDE](htt
 
 # Screenshots
 
-![alt tag](./Images/Login.png)
-![alt tag](./Images/BreezeDark.png)
-![alt tag](./Images/Emails.png)
+![alt tag](./Images/Screenshots.gif)
 
-# Colors
+Other colors examples from my [Stylus-DeepDark](https://gitlab.com/RaitaroH/Stylus-DeepDark).
 
-The colors are available in the code; different colors can be used. Here are just a few colors. For every color example please look [here](https://gitlab.com/RaitaroH/Stylus-DeepDark).
+![alt tag](https://gitlab.com/RaitaroH/Stylus-DeepDark/raw/master/Images/manager.gif)
