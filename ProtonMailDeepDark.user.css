@@ -2,7 +2,7 @@
 @name ProtonMail DeepDark
 @namespace gitlab.com/RaitaroH/ProtonMail-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark
-@version 1.1.0
+@version 1.1.1
 @updateURL https://gitlab.com/RaitaroH/ProtonMail-DeepDark/raw/master/ProtonMailDeepDark.user.css
 @description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (PrtonMail dark theme)
 @author RaitaroH
@@ -584,6 +584,10 @@
 	.sidebarApp-container .footer .storageBar
 	{
 		background: var(--hover-background) !important;
+	}
+	.storageBar .storageBar-progress
+	{
+		background: var(--main-color) !important;
 	}
 
 	/*Contacts*/
