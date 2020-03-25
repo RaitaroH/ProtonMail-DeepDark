@@ -1011,3 +1011,7 @@
 	{
 		fill: var(--main-color) !important; 
 	}
+	
+	.totalRows-label-right {
+		background: none;
+	}
