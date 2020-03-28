@@ -927,6 +927,10 @@
 	{
 		color: var(--main-color) !important;
 	}
+	.totalRows-label-right
+	{
+		background: none;
+	}
 	.settingsDashboard-overview-section-table-container .overviewSection-container .overviewSection-tbody-billing
 	{
 		background: var(--hover-background) !important;
