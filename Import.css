@@ -345,6 +345,11 @@
 		color: var(--main-text) !important;
 		border-color: var(--main-color) !important;
 	}
+	.pm_form input[type=email], .pm_form input[type=number], .pm_form input[type=password], .pm_form input[type=search],
+	.pm_form input[type=tel], .pm_form input[type=text], .pm_form input[type=url], .pm_form select, .pm_form textarea
+	{
+		border-radius: 0px !important;
+	}
 	.searchForm-advanced-container label
 	{
 		color: var(--main-text) !important;
@@ -1010,7 +1015,4 @@
 	#pm_composer .composer footer .pm_button:hover svg, .squireEditor-loaded footer .pm_button:hover svg
 	{
 		fill: var(--main-color) !important; 
-	}
-	.pm_form input[type=email], .pm_form input[type=number], .pm_form input[type=password], .pm_form input[type=search], .pm_form input[type=tel], .pm_form input[type=text], .pm_form input[type=url], .pm_form select, .pm_form textarea {
-		border-radius: 0px !important'
 	}
